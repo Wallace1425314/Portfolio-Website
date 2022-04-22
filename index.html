@@ -4,46 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>Portfolio Webstie</title>
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
+    <header class="header">
+        <h1>Portfolio</h1>    
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        <p></p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contacts</a></li>
-            <li><a href="#">Services</a></li>
-        </ul>
-    </nav>
-    <article>
-        <h2>ABOUT ME</h2>
-        <p>I an a student at Wellington College</p>
-    </article>
-    <aside>
-        <h2>CONNECT WITH ME</h2>
-        <a href="https://www.instagram.com/" target="blank"><img src="Instagram.png" alt="Instagram"></a>
-        <a href="https://www.facebook.com/" target="blank"><img src="Facebook.png" alt="Facebook"></a>
-        <a href="https://www.linkedin.com" target="blank"><img src="Linkedin.png" alt="Linkedin"></a>
-    </aside>
-    <section>
+    <section id="Profile">
+        <div>
+            <h1>Hello, I'm</h1>
+            <h1>Wallace Wu</h1>
+        </div>
+        <img src="Images/Profile.png" alt="Profile">
+    </section>
+    <section class="section-white">
+        <article id="about-me">
+            <h2>ABOUT ME</h2>
+            <p>I am a student at Wellington College</p>
+        </article>
+        <aside id="connect-with-me">
+            <h2>CONNECT WITH ME</h2>
+            <div>
+                <a href="https://www.instagram.com/" target="blank"><img src="Images/Instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/" target="blank"><img src="Images/Facebook.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com" target="blank"><img src="Images/Linkedin.png" alt="Linkedin"></a>
+            </div>
+        </aside>
+    </section>
+    <section class="section-blue">
         <h2>SKILLS</h2>
     </section>
     <br>
-    <section>
+    <section class="section-white">
         <h2>PROJECTS</h2>
     </section>
     <br>
-    <section>
+    <section class="section-blue" id="contact-me">
         <h2>CONTACT ME</h2>
-        <form action="">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <input type="tel" placeholder="Phone Number">
+        <form>
             <div>
-                <input type="text" placeholder="Message" style="width: 531px; height: 100px;">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="tel" placeholder="Phone Number">
+            </div>
+            <div>
+                <textarea placeholder="Message" id="message"></textarea>
             </div>
             <div>
                 <input type="submit" value="Contact Me">
@@ -52,7 +65,7 @@
     </section>
     <hr>
     <footer>
-        <p>Copyright and other things</p>
+        <p>Copyright &copy; 2022 My Website</p>
     </footer>
 </body>
 </html>
