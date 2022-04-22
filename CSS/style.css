@@ -13,9 +13,13 @@ body{
 .header ul{
     list-style: none;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 500px;
-    border: 1px solid red;
+}
+
+.header p{
+    color: blue;
+    width: 200px;
 }
 
 .header a{
@@ -137,12 +141,12 @@ body{
     .header ul{
         display: flex;
         flex-direction: column;
-        flex-basis: 0px;
+        width: 110px;
     }
 
     .header{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
     #message{
