@@ -1,6 +1,7 @@
 body{
     font: normal 16px Arial, Helvetica, sans-serif;
     height: 100vh;
+    margin: 0px;
 }
 
 .header{
@@ -36,7 +37,8 @@ body{
 #Profile{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(73, 124, 255, 1);
+    background-image: url("../Images/Profile_Section.png");
+    background-size: 100% 100%;
 }
 
 #Profile h1{
@@ -55,14 +57,27 @@ body{
 .section{
     display: flex;
     justify-content: space-evenly;
+    height: 350px;
+}
+
+.section *{
+    transform: translateY(50px);
 }
 
 .section h2{
     color: blue;
 }
 
+.section.white{
+    background-image: url("../Images/Section.png");
+    background-position: center;
+    background-size: 100% 100%
+}
+
 .section.blue{
-    background-color: rgba(73, 124, 255, 0.32);
+    background-image: url("../Images/Blue_Section.png");
+    background-position: center;
+    background-size: 100% 100%
 }
 
 #about-me, #connect-with-me{
@@ -80,13 +95,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(73, 124, 255, 0.32);
+    height: 500px;
 }
 
 #contact-me form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateY(-50px);
 }
 
 #contact-me input{
@@ -114,10 +130,6 @@ body{
     border: none;
 }
 
-#message:active, #contact-me input:active{
-    border: none;
-}
-
 .footer{
     display: flex;
     align-items: flex-end;
@@ -141,22 +153,20 @@ body{
         flex-direction: column;
         align-items: center;
     }
-
-    .section-blue{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: rgba(73, 124, 255, 0.32);
-    }
     
-    .section-white{
+    .section{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .section *{
+        transform: translateY(0px);
     }
 
     #message{
-        width: 100%; ;
+        width: 170px;
+        height: 50px;
     }
 
     #contact-me > form > div:first-of-type{
