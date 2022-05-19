@@ -37,7 +37,7 @@ body{
 #Profile{
     display: flex;
     justify-content: space-evenly;
-    background-image: url("../Images/Profile_Section.png");
+    background-image: url("../Images//Background/Profile_Section.png");
     background-size: 100% 100%;
 }
 
@@ -69,13 +69,13 @@ body{
 }
 
 .section.white{
-    background-image: url("../Images/Section.png");
+    background-image: url("../Images/Background/Section.png");
     background-position: center;
     background-size: 100% 100%
 }
 
 .section.blue{
-    background-image: url("../Images/Blue_Section.png");
+    background-image: url("../Images//Background/Blue_Section.png");
     background-position: center;
     background-size: 100% 100%
 }
