@@ -80,7 +80,7 @@ body{
     background-size: 100% 100%
 }
 
-#about-me, #connect-with-me{
+#about-me, #connect-with-me, #projects{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -120,6 +120,19 @@ body{
     background-color: rgba(73, 124, 255, 1);
     color: white;
     border-radius: 100px;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-25px);
+    width: 450px;
 }
 
 #message{
