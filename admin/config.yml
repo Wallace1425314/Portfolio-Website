@@ -6,8 +6,8 @@ media_folder: "images"
 
 collections:
   - name: 'card'
-  label: 'Card'
-  folder: 'Images/Projects'
-  create: true
-  fields:
-    - {label: "Featured Image", name: "thumbnail", widget: "image"}
+    label: 'Card'
+    folder: 'Images/Projects'
+    create: true
+    fields:
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
