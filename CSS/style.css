@@ -102,7 +102,6 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateY(-50px);
 }
 
 #contact-me input{
@@ -114,6 +113,7 @@ body{
     margin-left: 1px;
     margin-right: 1px;
     border-radius: 5px;
+    transform: translateY(-100px);
 }
 
 #contact-me input[type="submit"]{
@@ -123,8 +123,8 @@ body{
 }
 
 .thumbnail {
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 200px;
     border-radius: 10px;
 }
 
@@ -132,7 +132,7 @@ body{
     display: flex;
     justify-content: space-between;
     transform: translateY(-25px);
-    width: 450px;
+    width: 650px;
 }
 
 #message{
@@ -141,6 +141,7 @@ body{
     width: 530px; 
     height: 100px;
     border: none;
+    transform: translateY(-100px);
 }
 
 .footer{
@@ -175,6 +176,11 @@ body{
 
     .section *{
         transform: translateY(0px);
+    }
+
+    .thumbnails {
+        flex-direction: column;
+        align-items: center;
     }
 
     #message{
