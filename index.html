@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Webstie</title>
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+        function triggerBurger(context) {
+            context.classList.toggle("change");
+            document.querySelectorAll(".nav-bar li:not(:last-child)").forEach(el => el.style.getPropertyValue('display') === '' || el.style.getPropertyValue('display') === 'none' ? el.style.display = 'block' : el.style.display = 'none')
+        }
+    </script>
 </head>
+
 <body>
     <header class="header">
         <h1>Portfolio</h1>
-        <nav>
+        <nav class="nav-container">
             <ul class="nav-bar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contacts</a></li>
+                <li>
+                    <div class="hamburger" onclick="triggerBurger(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </li>
             </ul>
-        </nav>    
-        <p>Portfolio</p>
+
+        </nav>
     </header>
-    <section id="Profile">
+    <section id="profile">
         <div>
             <h1>Hello, I'm</h1>
             <h1>Wallace Wu</h1>
         </div>
-        <img src="/Images/Background/profile.png" alt="Profile">
+        <img src="/images/background/profile.png" alt="Profile">
     </section>
     <section class="section white">
         <article id="about-me">
@@ -36,21 +50,41 @@
         <aside id="connect-with-me">
             <h2>CONNECT WITH ME</h2>
             <div>
-                <a href="https://www.instagram.com/" target="blank"><img src="Images/Social Media/Instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/" target="blank"><img src="Images/Social Media/Facebook.png" alt="Facebook"></a>
-                <a href="https://www.linkedin.com" target="blank"><img src="Images/Social Media/Linkedin.png" alt="Linkedin"></a>
+                <a href="https://www.instagram.com/" target="blank"><img src="images/social-media/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/" target="blank"><img src="images/social-media/facebook.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com" target="blank"><img src="images/social-media/linkedin.png" alt="Linkedin"></a>
             </div>
         </aside>
     </section>
     <section class="section blue">
-        <h2>SKILLS</h2>
+        <div id="skills">
+            <h2>SKILLS</h2>
+            <!-- TODO: ADD SKILLS HERE LIKE: -->
+            <!-- <div>
+                <div>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+              <div>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git</li>
+                        <li>GitHub</li>
+                        <li>Visual Studio Code</li>
+                    </ul>
+                </div>
+            </div> -->
     </section>
     <section class="section">
         <div id="projects">
             <h2>PROJECTS</h2>
             <div class="thumbnails">
-                <a href="/Projects/Pig_Game/index.html"><img class="thumbnail" src="/Images/Project Thumbnails/Pig_Game.png"></a>
-                <a href="/Projects/Guess_The_Number/index.html"><img class="thumbnail" src="/Images/Project Thumbnails/Guess_The_Number.png"></a>
+                <a href="/projects/pig_game/index.html"><img class="thumbnail" src="/images/project-thumbnails/pig_game.png"></a>
+                <a href="/projects/guess_the_number/index.html"><img class="thumbnail" src="/images/project-thumbnails/guess_the_number.png"></a>
             </div>
         </div>
     </section>
@@ -74,16 +108,6 @@
     <footer>
         <p>Copyright &copy; 2022 My Website</p>
     </footer>
-    <script>
-        if (window.netlifyIdentity) {
-          window.netlifyIdentity.on("init", user => {
-            if (!user) {
-              window.netlifyIdentity.on("login", () => {
-                document.location.href = "/admin/";
-              });
-            }
-          });
-        }
-      </script>
 </body>
+
 </html>
