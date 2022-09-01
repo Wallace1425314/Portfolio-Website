@@ -132,7 +132,7 @@ body{
     display: flex;
     justify-content: space-between;
     transform: translateY(-25px);
-    width: 650px;
+    width: 975px;
 }
 
 #message{
